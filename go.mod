@@ -1,4 +1,4 @@
-module FirstAPI
+module LibraryAPI
 
 go 1.24.1
 
