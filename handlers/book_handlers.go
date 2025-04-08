@@ -3,9 +3,10 @@ package handlers
 import (
 	"net/http"
 
+	"LibraryAPI/models"
+	"LibraryAPI/utils"
+
 	"github.com/gin-gonic/gin"
-	"github.com/vegitobluefan/LibraryAPI/models"
-	"github.com/vegitobluefan/LibraryAPI/utils"
 )
 
 type BookRequest struct {

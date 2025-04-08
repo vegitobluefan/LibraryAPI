@@ -1,8 +1,9 @@
 package main
 
 import (
+	"LibraryAPI/handlers"
+
 	"github.com/gin-gonic/gin"
-	"github.com/vegitobluefan/LibraryAPI/handlers"
 )
 
 func main() {

@@ -1,5 +1,9 @@
 package models
 
+import (
+	"LibraryAPI/utils"
+)
+
 type Book struct {
 	ID       string `json:"id"`
 	Title    string `json:"title"`
@@ -27,7 +31,7 @@ func GetBookByID(id string) (*Book, bool) {
 func FilterBooksByAuthor(author string) []Book {
 	var filtered []Book
 	for _, b := range Books {
-		if ContainsIgnoreCase(b.Author, author) {
+		if utils.ContainsIgnoreCase(b.Author, author) {
 			filtered = append(filtered, b)
 		}
 	}
